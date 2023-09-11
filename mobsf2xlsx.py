@@ -47,6 +47,6 @@ for sheet in writer.sheets.values():
     worksheet.set_column(0, len(df.columns), 20)
     
 #save the report to the same folder as the html file
-writer.save()
+writer._save()
 #open the excel file
 os.startfile(file+ '.xlsx')
